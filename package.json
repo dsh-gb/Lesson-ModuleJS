@@ -1,0 +1,24 @@
+{
+  "name": "lesson-modulejs",
+  "version": "1.0.0",
+  "description": "Lesson GU Module JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsh-gb/Lesson-ModuleJS.git"
+  },
+  "keywords": [
+    "lesson",
+    "module",
+    "JS"
+  ],
+  "author": "Dmitriy Shamonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsh-gb/Lesson-ModuleJS/issues"
+  },
+  "homepage": "https://github.com/dsh-gb/Lesson-ModuleJS#readme"
+}
