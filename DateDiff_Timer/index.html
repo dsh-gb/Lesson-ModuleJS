@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- выбор калькулятора дат или таймера -->
+    <input type="radio" name="formcheck" value="datecalc" checked>Калькулятор дат</input>
+    <input type="radio" name="formcheck" value="timer">Таймер</input>
+
+    <!-- форма калькулятора дат -->
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+
+    <!-- форма таймера -->
+    <form id="timer">
+        <h3>Таймер</h3>
+        <input type="time" name="time" step="3">
+        <button type="button" id="start">Старт</button>
+        <button type="button" id="stop">Стоп</button>
+        <p id="time__result"></p>
+    </form>
+</body>
+
+</html>
