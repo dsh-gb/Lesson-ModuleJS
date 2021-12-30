@@ -1,0 +1,13 @@
+.about {
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+}

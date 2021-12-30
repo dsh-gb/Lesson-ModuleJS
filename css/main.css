@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ddd;
+    background-size: 100%;
+}
+
+h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+p {
+    font-size: 20px;
+    color: red
+}
