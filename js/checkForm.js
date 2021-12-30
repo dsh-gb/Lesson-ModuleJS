@@ -1,3 +1,6 @@
+import fonPic_one from '../fon-pic/fon-1.jpg';
+import fonPic_two from '../fon-pic/fon-2.jpg';
+
 function checkForm(listInput) {
     listInput.forEach(input => {
         // id форм совпадает с input.value
@@ -11,12 +14,20 @@ function checkForm(listInput) {
             listInput.forEach(input => {
                 if (input.checked) {
                     document.getElementById(`${input.value}`).style.display = '';
+                    switch (input.value) {
+                        case 'datecalc':
+                            document.body.style.backgroundImage = `url(${fonPic_one})`;
+                            break;
+                        case 'timer':
+                            document.body.style.backgroundImage = `url(${fonPic_two})`;
+                            break;
+                    }
                 } else {
                     document.getElementById(`${input.value}`).style.display = 'none';
-                }
+                };
             });
-        })
-    })
+        });
+    });
 }
 
 export default checkForm;

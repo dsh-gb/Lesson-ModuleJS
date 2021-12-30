@@ -3,6 +3,9 @@ import getDateDiff from './getDateDiff.js'
 import checkForm from './checkForm.js';
 import timerInteval from './timer.js';
 import { Duration } from 'luxon';
+import fonPic_one from '../fon-pic/fon-1.jpg';
+
+document.body.style.backgroundImage = `url(${fonPic_one})`;
 
 // получаем ссылки на элементы html страницы
 const inputCheck = document.querySelectorAll('input[name="formcheck"]')

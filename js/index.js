@@ -1,4 +1,5 @@
-import './main.js'
+import './main.js';
 
-import '../css/main.css'
-import '../styles/main.scss'
+import '../css/main.css';
+import '../styles/main.scss';
+

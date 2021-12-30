@@ -1,4 +1,6 @@
 import alarmSound from './alarm.js';
+import audioAlarm from '../audio-file/alarm.wav';
+import audioTick from '../audio-file/tick.wav';
 
 function timerInteval(seconds, timeResult, inputTime, startBtn, stopBtn) {
     const idInterval = setInterval(() => {
@@ -8,13 +10,14 @@ function timerInteval(seconds, timeResult, inputTime, startBtn, stopBtn) {
             const mm = Math.trunc((seconds - 3600 * hh) / 60);
             const ss = seconds - 3600 * hh - 60 * mm;
             seconds--;
+            alarmSound(audioTick); // ф-я воспроизведения звука тика таймера
             timeResult.innerText = `Осталось времени ${hh}:${mm}:${ss}`;
         } else {
             startBtn.disabled = false;
             stopBtn.disabled = true;
             timeResult.innerText = '';
             inputTime.value = '';
-            alarmSound(); // ф-я воспроизведения звука таймера
+            alarmSound(audioAlarm); // ф-я воспроизведения звука окончания таймера
             clearInterval(idInterval);
         }
     }, 1000);

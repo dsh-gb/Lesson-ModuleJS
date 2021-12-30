@@ -48,6 +48,6 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
 
-        new BundleAnalyzerPlugin()  // плагин для анализа размера составляющих сборки
+        //new BundleAnalyzerPlugin()  // плагин для анализа размера составляющих сборки
     ]
 }

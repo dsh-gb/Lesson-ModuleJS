@@ -1,9 +1,8 @@
 import { Howl } from 'howler';
 
-function alarmSound() {
+function alarmSound(srcFile) {
     const sound = new Howl({
-        src: ['https://www.soundjay.com/buttons/sounds/beep-09.mp3'],
-        //src: ['../alarm.wav']
+        src: [srcFile]
     });
 
     sound.play();
