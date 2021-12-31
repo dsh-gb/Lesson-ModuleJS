@@ -1,0 +1,43 @@
+@import 'wrapper.scss';
+@import 'cart.scss';
+
+body {
+    background-color: #3d314673;
+    font-family: fantasy;
+}
+
+h1 {
+    color: #120b0bb3;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    color: #464548e3;
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+h3 {
+    margin: 0 0 10px;
+    color: #fbf8ff99;
+    font-size: 22px;
+    font-family: cursive;
+}
+
+img {
+    width: 15vw;
+    height: 30vh;
+    border: 1px solid #302e2e;
+    border-radius: 10px;
+}
+
+audio {
+    width: 20vw;
+}
+
+video {
+    width: 35vw;
+}
